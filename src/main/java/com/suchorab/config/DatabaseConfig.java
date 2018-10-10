@@ -1,6 +1,7 @@
 package com.suchorab.config;
 
 import com.suchorab.model.AppUser;
+import com.suchorab.model.UserRole;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -53,7 +54,8 @@ public class DatabaseConfig {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource((DataSource) appContext.getBean("DataSource"));
         localSessionFactoryBean.setAnnotatedClasses(
-                AppUser.class
+                AppUser.class,
+                UserRole.class
         );
 
         Properties properties = new Properties();
