@@ -3,7 +3,6 @@ package com.suchorab.service.impl;
 import com.suchorab.DAO.AppUserDAO;
 import com.suchorab.model.AppUser;
 import com.suchorab.service.AppUserService;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,5 +18,10 @@ public class AppUserServiceImpl implements AppUserService {
     @Override
     public void insertAppUser(AppUser appUser) {
         appUserDAO.insertAppUser(appUser);
+    }
+
+    @Override
+    public AppUser getUserByUserName(String userName) {
+        return appUserDAO.getUserByUserName(userName);
     }
 }
