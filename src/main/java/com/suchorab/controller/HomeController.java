@@ -33,15 +33,12 @@ public class HomeController {
         return view;
     }
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/register")
     public String login(){
-        return "login";
+        return "register";
     }
 
-    @RequestMapping(value = "/signup")
-    public String signup(){
-        return "signup";
-    }
+
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public String singupForm(@RequestParam String userName, @RequestParam String password){
         UserRole role = userRoleService.getRoleUser();
