@@ -20,7 +20,7 @@
 
                 <div class="registration_form">
                     <!-- Form -->
-                    <form id="registration_form" action="${pageContext.request.contextPath}/registerUser.htm" method="POST">
+                    <form id="registration_form" action="${pageContext.request.contextPath}/registerUser" method="POST">
                         <div>
                             <label>
                                 <input placeholder="first name:" type="text" tabindex="1" name="register_firstName"
@@ -83,7 +83,7 @@
                 <h2>existing user</h2>
                 <div class="registration_form">
                     <!-- Form -->
-                    <form id="registration_login_form" action="${pageContext.request.contextPath}/registerLogin.htm" method="post">
+                    <form id="registration_login_form" action="${pageContext.request.contextPath}/registerLogin" method="post">
                         <div>
                             <label>
                                 <input placeholder="Email:" type="email" tabindex="3" name="register_login_email" id="register_login_email" required>

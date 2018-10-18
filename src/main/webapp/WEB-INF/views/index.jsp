@@ -22,7 +22,7 @@
                             <h3>NEW ARRIVALS</h3>
                             <p>CHECK NEW CARS</p>
                             <div class="crt-btn">
-                                <a href="${pageContext.request.contextPath}/newArrivals.htm">TAKE A LOOK</a>
+                                <a href="${pageContext.request.contextPath}/newArrivals">TAKE A LOOK</a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                             <h3>SELL YOUR VEHICLE</h3>
                             <p>YOU CAN SELL YOUR VEHICLE HERE</p>
                             <div class="crt-btn">
-                                <a href="${pageContext.request.contextPath}/sellVehicle.htm">SELL NOW </a>
+                                <a href="${pageContext.request.contextPath}/sellVehicle">SELL NOW </a>
                             </div>
                         </div>
                     </div>
@@ -42,13 +42,13 @@
                     <div class="col-md-8 arriv-left1">
                         <img src="<c:url value="/resources/images/3.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
-                            <a href="${pageContext.request.contextPath}/Cars.htm"><h3>Cars<i class="ars"></i></h3></a>
+                            <a href="${pageContext.request.contextPath}/Cars"><h3>Cars<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="col-md-4 arriv-right1">
                         <img src="<c:url value="/resources/images/4.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
-                            <a href="${pageContext.request.contextPath}/Motorbikes.htm"><h3>Motorbikes<i class="ars"></i></h3></a>
+                            <a href="${pageContext.request.contextPath}/Motorbikes"><h3>Motorbikes<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="clearfix"> </div>
@@ -57,19 +57,19 @@
                     <div class="col-md-4 arriv-left2">
                         <img src="<c:url value="/resources/images/5.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
-                            <a href="${pageContext.request.contextPath}/Trucks.htm"><h3>TRUCKS<i class="ars"></i></h3></a>
+                            <a href="${pageContext.request.contextPath}/Trucks"><h3>TRUCKS<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="col-md-4 arriv-middle">
                         <img src="<c:url value="/resources/images/6.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
-                            <a href="${pageContext.request.contextPath}/Vans.htm"><h3>VANS<i class="ars"></i></h3></a>
+                            <a href="${pageContext.request.contextPath}/Vans"><h3>VANS<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="col-md-4 arriv-right2">
                         <img src="<c:url value="/resources/images/7.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
-                            <a href="${pageContext.request.contextPath}/Buses.htm"><h3>BUSES<i class="ars"></i></h3></a>
+                            <a href="${pageContext.request.contextPath}/Buses"><h3>BUSES<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="clearfix"> </div>

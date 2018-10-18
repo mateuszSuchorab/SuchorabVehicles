@@ -20,7 +20,7 @@
                     We will contact with you
                     <br>
                     <br>
-                    <span><a href="${pageContext.request.contextPath}/index.htm">Click here to open the home page!</a></span>
+                    <span><a href="${pageContext.request.contextPath}/">Click here to open the home page!</a></span>
                 </h2>
                 <br>
             </div>

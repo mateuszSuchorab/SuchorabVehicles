@@ -50,7 +50,7 @@
 
                 <div class="registration_form">
                     <!-- Form -->
-                    <form id="registration_form" action="${pageContext.request.contextPath}/successOffer.htm" method="POST"
+                    <form id="registration_form" action="${pageContext.request.contextPath}/successOffer" method="POST"
                           enctype="multipart/form-data">
                         <div class="sky-form">
                             <div class="sky_form1">

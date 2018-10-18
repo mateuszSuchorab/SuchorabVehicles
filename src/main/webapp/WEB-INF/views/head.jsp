@@ -14,7 +14,7 @@
             Suchorab vehicles
         </title>
         <!--favicon -->
-        <link href="<c:url value="/resources/images/favicon-16x16.png"/>" type="image/x-icon" rel="shortcut icon" />
+        <link href="<c:url value="/resources/images/favicon.ico"/>" type="image/x-icon" rel="shortcut icon" />
 
         <link href="<c:url value="/resources/css/bootstrap.css"/>" rel='stylesheet' type='text/css' />
         <!-- jQuery (necessary JavaScript plugins) -->
