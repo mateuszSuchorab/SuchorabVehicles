@@ -23,7 +23,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        AppUser appUser = appUserService.getUserByUserName(s);
+        AppUser appUser = appUserService.getUserByUserEmail(s);
 
         if (appUser !=null){
             Collection<GrantedAuthority> authorities = appUser.getRoles()

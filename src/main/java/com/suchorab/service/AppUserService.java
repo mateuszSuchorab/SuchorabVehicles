@@ -7,5 +7,5 @@ public interface AppUserService {
 
     void insertAppUser(AppUser appUser);
 
-    AppUser getUserByUserName(String userName);
+    AppUser getUserByUserEmail(String email);
 }

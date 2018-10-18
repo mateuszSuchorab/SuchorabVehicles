@@ -21,7 +21,7 @@ public class AppUserServiceImpl implements AppUserService {
     }
 
     @Override
-    public AppUser getUserByUserName(String userName) {
-        return appUserDAO.getUserByUserName(userName);
+    public AppUser getUserByUserEmail(String email) {
+        return appUserDAO.getUserByUserEmail(email);
     }
 }

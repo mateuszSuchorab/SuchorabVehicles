@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.resource.transaction.spi.TransactionStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -24,16 +25,18 @@ public class AppUserDAOImpl implements AppUserDAO {
 
     @Override
     public void insertAppUser(AppUser appUser) {
-        Transaction transaction=currentSession().beginTransaction();
+        Transaction transaction = currentSession().beginTransaction();
         currentSession().save(appUser);
-        transaction.commit();
+        if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))
+            transaction.commit();
     }
 
     @Override
-    public AppUser getUserByUserName(String userName) {
-        Transaction transaction=currentSession().beginTransaction();
-        AppUser appUser = (AppUser) currentSession().createCriteria(AppUser.class).add(Restrictions.eq("userName", userName)).uniqueResult();
-        transaction.commit();
+    public AppUser getUserByUserEmail(String email) {
+        Transaction transaction = currentSession().beginTransaction();
+        AppUser appUser = (AppUser) currentSession().createCriteria(AppUser.class).add(Restrictions.eq("email", email)).uniqueResult();
+        if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))
+            transaction.commit();
         return appUser;
     }
 }
