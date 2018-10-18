@@ -27,7 +27,6 @@ public class AppUserDAOImpl implements AppUserDAO {
     public void insertAppUser(AppUser appUser) {
         Transaction transaction = currentSession().beginTransaction();
         currentSession().save(appUser);
-        if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))
             transaction.commit();
     }
 
