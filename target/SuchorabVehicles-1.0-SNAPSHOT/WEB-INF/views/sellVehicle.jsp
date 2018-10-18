@@ -52,6 +52,7 @@
                     <!-- Form -->
                     <form id="registration_form" action="${pageContext.request.contextPath}/successOffer" method="POST"
                           enctype="multipart/form-data">
+                        <fieldset id="inputs">
                         <div class="sky-form">
                             <div class="sky_form1">
                                 <ul>
@@ -158,9 +159,13 @@
                                 <textarea placeholder="enter car details here" tabindex="11" name="vehicle_details" id="vehicle_details" cols="40" rows="5"></textarea>
                             </label>
                         </div>
+                        </fieldset>
+                        <fieldset id="actions">
+                        <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
                         <div>
                             <input type="submit" value="create an offer" id="vehicle_submit">
                         </div>
+                        </fieldset>
                     </form>
                     <!-- /Form -->
                 </div>

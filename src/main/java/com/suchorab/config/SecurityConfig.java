@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
 
                 .authorizeRequests()
-                .antMatchers("/sellVehicle").authenticated()
+                //.antMatchers("/sellVehicle").authenticated()
                 .antMatchers("/**").permitAll()
                 .and()
                 .formLogin().loginPage("/login")
@@ -40,7 +40,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordParameter("login_password")
                 .defaultSuccessUrl("/Cars").permitAll()
                 .and()
-                .logout().permitAll();
+                .logout().permitAll()
+                .and().csrf().disable();
     }
     @Override
     public void configure(WebSecurity web) throws Exception {
