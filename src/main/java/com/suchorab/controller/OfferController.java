@@ -6,7 +6,6 @@ import com.suchorab.service.AppUserService;
 import com.suchorab.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -78,7 +77,7 @@ public class OfferController {
         vehicle.setFuelType(fuelType);
         vehicle.setCreateDate(new Date());
        // vehicle.setUser((AppUser) session.getAttribute("loggedInUser"));
-        AppUser user = appUserService.getUserByUserEmail("a@a.a"); // HERE IS COME WORK TO DO 
+        AppUser user = appUserService.getUserByUserEmail("a@a.a"); // HERE IS COME WORK TO DO
         List <AppUser> appUserList = new ArrayList<AppUser>();
         appUserList.add(user);
         vehicle.setUser(appUserList);
@@ -92,7 +91,6 @@ public class OfferController {
         }
 
         for (CommonsMultipartFile aFile : vehiclePicture2) {
-            //System.out.println("Saving file: " + aFile.getOriginalFilename());
             if (aFile.getOriginalFilename() != null && aFile.getOriginalFilename().length() > 0) {
                 vehicle.setImage2(aFile.getBytes());
             } else {
