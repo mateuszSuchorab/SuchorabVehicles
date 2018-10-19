@@ -41,6 +41,7 @@
                                                             <input type="password" name="login_password"
                                                                    id="login_password">
                                                         </fieldset>
+                                                        <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
                                                         <div>
                                                             <span clas="brand"><c:out value="${ErrorLogin}"/></span>
                                                         </div>

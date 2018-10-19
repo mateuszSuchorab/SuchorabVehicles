@@ -304,7 +304,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
@@ -316,11 +316,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="43" column="133" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="112" column="35" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+            <state relative-caret-position="328">
+              <caret line="108" column="105" lean-forward="true" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -372,7 +381,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/etalage.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pageNotFound.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp" />
@@ -405,6 +413,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
       </list>
     </option>
   </component>
@@ -752,11 +761,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51573000" />
+    <option name="totallyTimeSpent" value="51829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50416666" side_tool="true" weight="0.32908705" />
@@ -778,11 +786,11 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -832,13 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1228,13 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="112" column="35" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/OfferController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1429">
@@ -1253,6 +1247,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="108" column="105" lean-forward="true" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="43" column="133" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
         </state>
       </provider>
     </entry>
