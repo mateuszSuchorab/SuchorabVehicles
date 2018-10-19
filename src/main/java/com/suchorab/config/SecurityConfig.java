@@ -32,13 +32,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
 
                 .authorizeRequests()
-                //.antMatchers("/sellVehicle").authenticated()
+                .antMatchers("/sellVehicle").authenticated()
                 .antMatchers("/**").permitAll()
                 .and()
                 .formLogin().loginPage("/login")
                 .usernameParameter("login_email")
                 .passwordParameter("login_password")
-                .defaultSuccessUrl("/Cars").permitAll()
+                .defaultSuccessUrl("/").permitAll()
                 .and()
                 .logout().permitAll()
                 .and().csrf().disable();

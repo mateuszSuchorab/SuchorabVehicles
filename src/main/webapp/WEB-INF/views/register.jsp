@@ -90,6 +90,7 @@
                 <div class="registration_form">
                     <!-- Form -->
                     <form id="registration_login_form" action="${pageContext.request.contextPath}/login" method="post">
+                        <fieldset id="inputs2">
                         <div>
                             <label>
                                 <input placeholder="Email:" type="email" tabindex="3" name="login_email" id="register_login_email" required>
@@ -100,12 +101,16 @@
                                 <input placeholder="password" type="password" tabindex="4" name="login_password" id="register_login_password" required>
                             </label>
                         </div>
+                        </fieldset>
                         <div>
                             <span clas="brand" ><c:out value="${ErrorLogin}"/></span>
                         </div>
+                        <fieldset id="actions2">
+                            <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
                         <div>
                             <input type="submit" value="sign in" id="register-submit">
                         </div>
+                        </fieldset>
                     </form>
                     <!-- /Form -->
                 </div>
