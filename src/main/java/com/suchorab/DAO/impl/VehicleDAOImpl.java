@@ -33,7 +33,6 @@ public class VehicleDAOImpl implements VehicleDAO {
     public void createVehicle(Vehicle vehicle) {
         Transaction transaction = currentSession().beginTransaction();
         currentSession().save(vehicle);
-        if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))
             transaction.commit();
     }
 

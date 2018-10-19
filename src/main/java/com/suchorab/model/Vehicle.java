@@ -1,20 +1,27 @@
 package com.suchorab.model;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import java.io.Serializable;
+
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Mateusz Suchorab <suchorab.mateusz@gmail.com>
  */
 @Entity
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
 @Table(name = "vehicles")
-public class Vehicle implements Serializable {
+public @Data class Vehicle  {
 
-    private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long vehicleId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int vehicleId;
 
     @Column(name = "Make")
     private String make;
@@ -62,15 +69,15 @@ public class Vehicle implements Serializable {
     private String details;
 
 
-    @ManyToOne
-    @JoinColumn(name = "id")
-    private AppUser appUser;
+    @Column(name = "User")
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<AppUser> appUser;
 
-    public Long getVehicleId() {
+    public int getVehicleId() {
         return vehicleId;
     }
 
-    public void setVehicleId(Long vehicleId) {
+    public void setVehicleId(int vehicleId) {
         this.vehicleId = vehicleId;
     }
 
@@ -154,11 +161,11 @@ public class Vehicle implements Serializable {
         this.createDate = createDate;
     }
 
-    public AppUser getUser() {
+    public List<AppUser> getUser() {
         return appUser;
     }
 
-    public void setUser(AppUser user) {
+    public void setUser(List<AppUser> appUser) {
         this.appUser = appUser;
     }
 
@@ -202,27 +209,5 @@ public class Vehicle implements Serializable {
         this.details = details;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (vehicleId != null ? vehicleId.hashCode() : 0);
-        return hash;
-    }
 
-    @Override
-    public boolean equals(Object object) {
-        if (!(object instanceof Vehicle)) {
-            return false;
-        }
-        Vehicle other = (Vehicle) object;
-        if ((this.vehicleId == null && other.vehicleId != null) || (this.vehicleId != null && !this.vehicleId.equals(other.vehicleId))) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "com.suchorab.projectmaven.model.Vehicle[ vehicleId=" + vehicleId + " ]";
-    }
 }

@@ -6,6 +6,7 @@ import com.suchorab.service.AppUserService;
 import com.suchorab.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,7 +17,9 @@ import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -38,7 +41,7 @@ public class OfferController {
         return view;
     }
 
-    @RequestMapping(value = "/successOffer", method = RequestMethod.POST)
+    @RequestMapping(value = "/successOffer", method = RequestMethod.POST ,  consumes = {"application/x-www-form-urlencoded"})
     public ModelAndView showSuccessOffer(@RequestParam("vehicle_make") String make,
                                          @RequestParam("vehicle_model") String model,
                                          @RequestParam("vehicle_power") int power,
@@ -47,17 +50,16 @@ public class OfferController {
                                          @RequestParam("vehicle_price") int price,
                                          @RequestParam("vehicle_fuelType") String fuelType,
                                          @RequestParam("vehicle_kilometer") int kilometer,
-                                         @RequestParam("vehicle_picture1") CommonsMultipartFile[] vehiclePicture1,
-                                         @RequestParam("vehicle_picture2") CommonsMultipartFile[] vehiclePicture2,
-                                         @RequestParam("vehicle_picture3") CommonsMultipartFile[] vehiclePicture3,
-                                         @RequestParam("vehicle_picture4") CommonsMultipartFile[] vehiclePicture4,
-                                         @RequestParam("vehicle_details") String details,
-                                         HttpSession session
+                                         //@RequestParam("vehicle_picture1") CommonsMultipartFile[] vehiclePicture1,
+                                         //@RequestParam("vehicle_picture2") CommonsMultipartFile[] vehiclePicture2,
+                                         //@RequestParam("vehicle_picture3") CommonsMultipartFile[] vehiclePicture3,
+                                         //@RequestParam("vehicle_picture4") CommonsMultipartFile[] vehiclePicture4,
+                                         @RequestParam("vehicle_details") String details
     ) {
         ModelAndView view = new ModelAndView();
         Vehicle vehicle = new Vehicle();
-        vehicle.setVehicleId(Long.valueOf("0"));
         DateFormat dateFormat = new SimpleDateFormat("MMMM yyyy", Locale.US);
+
         try {
             vehicle.setFirstRegistration(dateFormat.parse(firstRegistration));
         } catch (ParseException e) {
@@ -74,9 +76,11 @@ public class OfferController {
         vehicle.setCreateDate(new Date());
        // vehicle.setUser((AppUser) session.getAttribute("loggedInUser"));
         AppUser user = appUserService.getUserByUserEmail("a@a.a");
-        vehicle.setUser(user);
+        List <AppUser> appUserList = new ArrayList<AppUser>();
+        appUserList.add(user);
+        vehicle.setUser(appUserList);
 
-        for (CommonsMultipartFile aFile : vehiclePicture1) {
+     /*   for (CommonsMultipartFile aFile : vehiclePicture1) {
             //System.out.println("Saving file: " + aFile.getOriginalFilename());
             if (aFile.getOriginalFilename() != null && aFile.getOriginalFilename().length() > 0) {
                 vehicle.setImage1(aFile.getBytes());
@@ -109,7 +113,7 @@ public class OfferController {
             } else {
                 vehicle.setImage4(null);
             }
-        }
+        }*/
         vehicle.setDetails(details);
         vehicleService.createVehicle(vehicle);
         view.setViewName("successOffer");
