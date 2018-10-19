@@ -5,6 +5,8 @@ import com.suchorab.model.Vehicle;
 import com.suchorab.service.AppUserService;
 import com.suchorab.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -76,10 +78,13 @@ public class OfferController {
         vehicle.setVehicleType(type);
         vehicle.setFuelType(fuelType);
         vehicle.setCreateDate(new Date());
-       // vehicle.setUser((AppUser) session.getAttribute("loggedInUser"));
-        AppUser user = appUserService.getUserByUserEmail("a@a.a"); // HERE IS COME WORK TO DO
         List <AppUser> appUserList = new ArrayList<AppUser>();
-        appUserList.add(user);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String logedUserEmail = auth.getName();
+        if (!logedUserEmail.equals("anonymousUser") ){
+            AppUser user = appUserService.getUserByUserEmail(logedUserEmail);
+            appUserList.add(user);
+        }
         vehicle.setUser(appUserList);
 
         for (CommonsMultipartFile aFile : vehiclePicture1) {
