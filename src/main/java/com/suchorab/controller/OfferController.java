@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -25,6 +26,8 @@ import java.util.Locale;
 /**
  * @author Mateusz Suchorab <suchorchorab.mateusz@gmail.com>
  */
+@MultipartConfig( fileSizeThreshold=1024*1024,
+        maxFileSize=1024*1024*5, maxRequestSize=1024*1024*5*5)
 @Controller
 public class OfferController {
 
@@ -41,7 +44,7 @@ public class OfferController {
         return view;
     }
 
-    @RequestMapping(value = "/successOffer", method = RequestMethod.POST ,  consumes = {"application/x-www-form-urlencoded"})
+    @RequestMapping(value = "/successOffer", method = RequestMethod.POST ,  consumes = "multipart/form-data")
     public ModelAndView showSuccessOffer(@RequestParam("vehicle_make") String make,
                                          @RequestParam("vehicle_model") String model,
                                          @RequestParam("vehicle_power") int power,
@@ -50,10 +53,10 @@ public class OfferController {
                                          @RequestParam("vehicle_price") int price,
                                          @RequestParam("vehicle_fuelType") String fuelType,
                                          @RequestParam("vehicle_kilometer") int kilometer,
-                                         //@RequestParam("vehicle_picture1") CommonsMultipartFile[] vehiclePicture1,
-                                         //@RequestParam("vehicle_picture2") CommonsMultipartFile[] vehiclePicture2,
-                                         //@RequestParam("vehicle_picture3") CommonsMultipartFile[] vehiclePicture3,
-                                         //@RequestParam("vehicle_picture4") CommonsMultipartFile[] vehiclePicture4,
+                                         @RequestParam("vehicle_picture1") CommonsMultipartFile[] vehiclePicture1,
+                                         @RequestParam("vehicle_picture2") CommonsMultipartFile[] vehiclePicture2,
+                                         @RequestParam("vehicle_picture3") CommonsMultipartFile[] vehiclePicture3,
+                                         @RequestParam("vehicle_picture4") CommonsMultipartFile[] vehiclePicture4,
                                          @RequestParam("vehicle_details") String details
     ) {
         ModelAndView view = new ModelAndView();
@@ -75,13 +78,12 @@ public class OfferController {
         vehicle.setFuelType(fuelType);
         vehicle.setCreateDate(new Date());
        // vehicle.setUser((AppUser) session.getAttribute("loggedInUser"));
-        AppUser user = appUserService.getUserByUserEmail("a@a.a");
+        AppUser user = appUserService.getUserByUserEmail("a@a.a"); // HERE IS COME WORK TO DO 
         List <AppUser> appUserList = new ArrayList<AppUser>();
         appUserList.add(user);
         vehicle.setUser(appUserList);
 
-     /*   for (CommonsMultipartFile aFile : vehiclePicture1) {
-            //System.out.println("Saving file: " + aFile.getOriginalFilename());
+        for (CommonsMultipartFile aFile : vehiclePicture1) {
             if (aFile.getOriginalFilename() != null && aFile.getOriginalFilename().length() > 0) {
                 vehicle.setImage1(aFile.getBytes());
             } else {
@@ -99,7 +101,6 @@ public class OfferController {
         }
 
         for (CommonsMultipartFile aFile : vehiclePicture3) {
-            //System.out.println("Saving file: " + aFile.getOriginalFilename());
             if (aFile.getOriginalFilename() != null && aFile.getOriginalFilename().length() > 0) {
                 vehicle.setImage3(aFile.getBytes());
             } else {
@@ -107,13 +108,12 @@ public class OfferController {
             }
         }
         for (CommonsMultipartFile aFile : vehiclePicture4) {
-            //System.out.println("Saving file: " + aFile.getOriginalFilename());
             if (aFile.getOriginalFilename() != null && aFile.getOriginalFilename().length() > 0) {
                 vehicle.setImage4(aFile.getBytes());
             } else {
                 vehicle.setImage4(null);
             }
-        }*/
+        }
         vehicle.setDetails(details);
         vehicleService.createVehicle(vehicle);
         view.setViewName("successOffer");

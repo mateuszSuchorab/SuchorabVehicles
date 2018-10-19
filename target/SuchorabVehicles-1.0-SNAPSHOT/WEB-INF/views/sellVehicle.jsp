@@ -50,7 +50,7 @@
 
                 <div class="registration_form">
                     <!-- Form -->
-                    <form id="registration_form" action="${pageContext.request.contextPath}/successOffer" method="POST">
+                    <form id="registration_form" action="${pageContext.request.contextPath}/successOffer" method="POST" enctype="multipart/form-data">
                          <!-- enctype="multipart/form-data"-->
 
                         <fieldset id="inputs">
@@ -126,11 +126,10 @@
                                        id="vehicle_price" required>
                             </label>
                         </div>
-                     <!--   <div>
+                       <div>
                             <label>
                                 <label for="vehicle_picture1">Choose a picture 1</label>
-                                <input placeholder="Enter details of car here" type="file" tabindex="7"
-                                       name="vehicle_picture1" id="vehicle_picture1"
+                                <input type="file" tabindex="7" name="vehicle_picture1" id="vehicle_picture1"
                                        accept="image/x-png,image/gif,image/jpeg">
                             </label>
                         </div>
@@ -154,7 +153,7 @@
                                 <input type="file" tabindex="10" name="vehicle_picture4" id="vehicle_picture4"
                                        accept="image/x-png,image/gif,image/jpeg">
                             </label>
-                        </div>-->
+                        </div>
                         <div>
                             <label>
                                 <textarea placeholder="enter car details here" tabindex="11" name="vehicle_details" id="vehicle_details" cols="40" rows="5"></textarea>
