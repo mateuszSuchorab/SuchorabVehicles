@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56695c1c-8a87-4519-a4be-da461b5a3034" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_0_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_0_3_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SuchorabVehicles_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SuchorabVehicles_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SuchorabVehicles_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SuchorabVehicles_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -38,8 +36,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_0_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_0_3_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_3_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_0_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_0_3_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_3_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_2_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterDir="false" />
@@ -164,8 +164,10 @@
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-acl-4.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-acl-4.0.3.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-4.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-4.0.3.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-4.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-4.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-4.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-4.0.3.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-4.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-4.0.3.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterDir="false" />
@@ -246,7 +248,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/VehicleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/VehicleDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/AppUserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/AppUserDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/UserRoleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/UserRoleDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/VehicleDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/VehicleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/DAO/impl/VehicleDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/config/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/config/DatabaseConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/config/RootConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/config/SecurityConfig.class" afterDir="false" />
@@ -255,10 +257,10 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/config/WebInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/config/WebInit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/DetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/controller/DetailsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/ImageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/OfferController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/controller/ImageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/OfferController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/controller/OfferController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/VehicleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/controller/VehicleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/controller/VehicleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/model/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/model/AppUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/model/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/model/UserRole.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suchorab/model/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suchorab/model/Vehicle.class" afterDir="false" />
@@ -281,7 +283,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OfferController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OfferController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/OfferController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
@@ -294,11 +296,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VehicleController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="261">
+              <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -765,12 +767,12 @@
       <workItem from="1539127716442" duration="4532000" />
       <workItem from="1539159294967" duration="6975000" />
       <workItem from="1539937119090" duration="9095000" />
-      <workItem from="1540129936049" duration="2239000" />
+      <workItem from="1540129936049" duration="2706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58217000" />
+    <option name="totallyTimeSpent" value="58684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -797,12 +799,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -810,7 +813,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1018,6 +1020,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="34" column="26" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,12 +1165,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/OfferController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="146">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3732#3741#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1182,13 +1188,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/OfferController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+        <state relative-caret-position="261">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3732#3741#0" expanded="true" />
           </folding>
         </state>
       </provider>

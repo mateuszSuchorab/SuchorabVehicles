@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="regAccount">
                                     <a >Logged
-                                        as: ${loggedInUser.getFirstName()} ${loggedInUser.getLastName()}</a>
+                                        as: <sec:authentication property="principal.username" /></a>
                                 </div>
                             </sec:authorize>
 
