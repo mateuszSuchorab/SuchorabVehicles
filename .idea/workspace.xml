@@ -103,6 +103,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/etalage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/etalage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/cart-c.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/classes/com/suchorab/DAO/AppUserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/WEB-INF/classes/com/suchorab/DAO/AppUserDAO.class" afterDir="false" />
@@ -209,7 +210,7 @@
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/arrwss.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/arrwss.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/art.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/art.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/art1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/art1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/cart-c.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/cart-c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/cart-c.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/close_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/close_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/d1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/d1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/d2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/SuchorabVehicles-1.0-SNAPSHOT/resources/images/d2.jpg" afterDir="false" />
@@ -296,10 +297,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VehicleController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="6">
               <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -308,25 +309,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/model/Vehicle.java">
+      <file leaf-file-name="vehicle.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="168" column="16" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3330#3331#0" expanded="true" />
-                <element signature="e#3368#3369#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+            <state relative-caret-position="258">
+              <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -334,10 +321,24 @@
       <file leaf-file-name="ImageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/ImageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="176">
+              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VehicleDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/DAO/impl/VehicleDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -365,7 +366,11 @@
       <find>_csrf</find>
       <find>vehicle_make</find>
       <find>spring-security-</find>
+      <find>etalage_thumb_image</find>
     </findStrings>
+    <replaceStrings>
+      <replace>etalage_thumb_image1</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -396,7 +401,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/successLogout.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/successOffer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/successRegister.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/config/WebInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/controller/DetailsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/model/AppUser.java" />
@@ -415,15 +419,16 @@
         <option value="$PROJECT_DIR$/SuchorabVehicles.iml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/service/VehicleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/service/impl/VehicleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/DAO/VehicleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/suchorab/DAO/impl/VehicleDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/controller/ImageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/model/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/suchorab/controller/OfferController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/suchorab/DAO/impl/VehicleDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -767,16 +772,15 @@
       <workItem from="1539127716442" duration="4532000" />
       <workItem from="1539159294967" duration="6975000" />
       <workItem from="1539937119090" duration="9095000" />
-      <workItem from="1540129936049" duration="2706000" />
+      <workItem from="1540129936049" duration="5441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58684000" />
+    <option name="totallyTimeSpent" value="61419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50416666" side_tool="true" weight="0.32908705" />
@@ -827,7 +831,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
@@ -869,13 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="69" column="75" lean-forward="true" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1074,73 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/service/VehicleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/service/impl/VehicleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/DAO/VehicleDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/DAO/impl/VehicleDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/ImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1158,13 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/OfferController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1173,6 +1095,23 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3732#3741#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="69" column="96" selection-start-line="69" selection-start-column="96" selection-end-line="69" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -1188,13 +1127,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/VehicleController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/service/VehicleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+        <state relative-caret-position="227">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/service/impl/VehicleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/DAO/VehicleDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/controller/ImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/suchorab/DAO/impl/VehicleDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/HTML Template/web/details.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicle.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
         </state>
       </provider>
     </entry>

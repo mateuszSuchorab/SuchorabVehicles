@@ -64,7 +64,7 @@ public class VehicleDAOImpl implements VehicleDAO {
     public Vehicle findVehicle(int vehicleId) {
         Transaction transaction = currentSession().beginTransaction();
         Vehicle result = (Vehicle) currentSession().get(Vehicle.class, vehicleId);
-        if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))
+
             transaction.commit();
         return result;
     }
