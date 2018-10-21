@@ -36,10 +36,10 @@
                                         </c:when>
                                         <c:otherwise>
                                             <img class="etalage_thumb_image"
-                                                 src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=1"/>"
+                                                 src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=1"/>"
                                                  class="img-responsive"/>
                                             <img class="etalage_source_image"
-                                                 src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=1"/>"
+                                                 src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=1"/>"
                                                  class="img-responsive" title=""/>
                                         </c:otherwise>
                                     </c:choose>
@@ -57,10 +57,10 @@
                                     </c:when>
                                     <c:otherwise>
                                         <img class="etalage_thumb_image"
-                                             src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=2"/>"
+                                             src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=2"/>"
                                              class="img-responsive"/>
                                         <img class="etalage_source_image"
-                                             src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=2"/>"
+                                             src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=2"/>"
                                              class="img-responsive" title=""/>
                                     </c:otherwise>
                                 </c:choose>
@@ -77,10 +77,10 @@
                                     </c:when>
                                     <c:otherwise>
                                         <img class="etalage_thumb_image"
-                                             src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=3"/>"
+                                             src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=3"/>"
                                              class="img-responsive"/>
                                         <img class="etalage_source_image"
-                                             src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=3"/>"
+                                             src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=3"/>"
                                              class="img-responsive" title=""/>
                                     </c:otherwise>
                                 </c:choose>
@@ -97,10 +97,10 @@
                                     </c:when>
                                     <c:otherwise>
                                         <img class="etalage_thumb_image"
-                                             src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=4"/>"
+                                             src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=4"/>"
                                              class="img-responsive"/>
                                         <img class="etalage_source_image"
-                                             src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicle.vehicleId}&image=4"/>"
+                                             src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicle.vehicleId}&image=4"/>"
                                              class="img-responsive" title=""/>
                                     </c:otherwise>
                                 </c:choose>
@@ -111,7 +111,7 @@
                     <div class="desc1 span_3_of_2">
                         <h3><c:out value="${vehicle.make}"/> <c:out value="${vehicle.model}"/></h3>
                         <span class="brand">Type: <a
-                                href="${pageContext.request.contextPath}/<c:out value="${vehicle.vehicleType}"/>.htm"><c:out
+                                href="${pageContext.request.contextPath}/<c:out value="${vehicle.vehicleType}"/>"><c:out
                                 value="${vehicle.vehicleType}"/> </a></span>
                         <br>
                         <span class="brand">Kilometrage: <c:out value="${vehicle.kilometer}"/></span>
@@ -130,7 +130,7 @@
                         <!-- <div class="btn_form">
                             <a href="checkout.html">Wanna by it?</a>
                         </div>
-                        <a href="${pageContext.request.contextPath}/vehiclePDF<c:out value="${vehicle.vehicleId}"/>.htm"><span>Download this offer as PDF</span></a>
+                        <a href="${pageContext.request.contextPath}/vehiclePDF<c:out value="${vehicle.vehicleId}"/>"><span>Download this offer as PDF</span></a>
                         -->
                     </div>
                     <div class="clearfix"></div>
@@ -144,7 +144,7 @@
                     <div class="product">
                         <div class="product-desc">
                             <div class="product-img" >
-                                <a href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>.htm">
+                                <a href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>">
                                 <c:choose>
                                     <c:when test="${firstAdditionalVehicle.image1==NULL}">
                                         <img src="<c:url value="/resources/images/imageNotFound.png"/>"
@@ -153,17 +153,17 @@
                                              />
                                     </c:when>
                                     <c:otherwise>
-                                        <img src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${firstAdditionalVehicle.vehicleId}&image=1"/>"
+                                        <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${firstAdditionalVehicle.vehicleId}&image=1"/>"
                                              class="img-responsive "
                                              alt=""
-                                             href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>.htm"/>
+                                             href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>"/>
                                     </c:otherwise>
                                 </c:choose>
                                 </a>
                             </div>
                             <div class="prod1-desc">
                                 <h5><a class="product_link"
-                                       href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>.htm"><c:out
+                                       href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>"><c:out
                                         value="${firstAdditionalVehicle.make}"/> <c:out
                                         value="${firstAdditionalVehicle.model}"/></a></h5>
                                 <p class="product_descr"> Type: <c:out value="${firstAdditionalVehicle.vehicleType}"/>
@@ -177,7 +177,7 @@
                         </div>
                         <div class="product_price">
                             <span class="price-access"><c:out value="${firstAdditionalVehicle.price}"/>  €</span>
-                            <form action="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>.htm">
+                            <form action="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>">
                                 <button class="button1"><span>Check this vehicle! </span></button>
                             </form>
                         </div>
@@ -186,7 +186,7 @@
                     <div class="product">
                         <div class="product-desc">
                             <div class="product-img">
-                                <a href="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>.htm">
+                                <a href="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>">
                                 <c:choose>
                                     <c:when test="${secondAdditionalVehicle.image1==NULL}">
                                         <img src="<c:url value="/resources/images/imageNotFound.png"/>"
@@ -194,7 +194,7 @@
                                              alt=""/>
                                     </c:when>
                                     <c:otherwise>
-                                        <img src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${secondAdditionalVehicle.vehicleId}&image=1"/>"
+                                        <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${secondAdditionalVehicle.vehicleId}&image=1"/>"
                                              class="img-responsive "
                                              alt=""/>
                                     </c:otherwise>
@@ -203,7 +203,7 @@
                             </div>
                             <div class="prod1-desc">
                                 <h5><a class="product_link"
-                                       href="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>.htm"><c:out
+                                       href="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>"><c:out
                                         value="${secondAdditionalVehicle.make}"/> <c:out
                                         value="${secondAdditionalVehicle.model}"/></a></h5>
                                 <p class="product_descr"> Type: <c:out value="${secondAdditionalVehicle.vehicleType}"/>
@@ -217,7 +217,7 @@
                         </div>
                         <div class="product_price">
                             <span class="price-access"><c:out value="${secondAdditionalVehicle.price}"/>  €</span>
-                            <form action="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>.htm">
+                            <form action="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>">
                                 <button class="button1"><span>Check this vehicle! </span></button>
                             </form>
                         </div>

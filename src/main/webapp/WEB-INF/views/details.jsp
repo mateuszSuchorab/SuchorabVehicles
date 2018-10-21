@@ -62,7 +62,7 @@
                     <ul>
                         <c:forEach items="${vehicleTypeList}" var="vehicleTypeListElement">
                             <li>
-                                <a href="<c:out value="${vehicleTypeListElement}"/>.htm">${vehicleTypeListElement}</a>
+                                <a href="<c:out value="${vehicleTypeListElement}"/>">${vehicleTypeListElement}</a>
                             </li>
                         </c:forEach>
                     </ul>
@@ -254,18 +254,18 @@
                 </c:if>
                 <div class="grid1_of_4" id="grind_<c:out value="${grindNumber}"/>">
                     <div class="content_box"><a
-                            href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>.htm>
+                            href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
                         <c:choose>
                             <c:when test="${vehicleListElement.image1==NULL || vehicleListElement.image1==''}">
                                 <img src="<c:url value="/resources/images/imageNotFound.png"/>" class="img-responsive" alt=""/>
                             </c:when>
                             <c:otherwise>
-                                <img src="<c:url value="/vehicleImage/imageDisplay.htm?vehicleId=${vehicleListElement.vehicleId}&image=1"/>" class="img-responsive" alt=""/>
+                                <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicleListElement.vehicleId}&image=1"/>" class="img-responsive" alt=""/>
                             </c:otherwise>
                         </c:choose>
 
                     </a>
-                        <h4><a href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>.htm>
+                        <h4><a href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
                             <c:out value="${vehicleListElement.make}"/></a></h4>
                         <p><c:out value="${vehicleListElement.model}"/></p>
                         <div class="grid_1 simpleCart_shelfItem">

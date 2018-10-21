@@ -50,8 +50,10 @@
 
                 <div class="registration_form">
                     <!-- Form -->
-                    <form id="registration_form" action="${pageContext.request.contextPath}/successOffer.htm" method="POST"
-                          enctype="multipart/form-data">
+                    <form id="registration_form" action="${pageContext.request.contextPath}/successOffer" method="POST" enctype="multipart/form-data">
+                         <!-- enctype="multipart/form-data"-->
+
+                        <fieldset id="inputs">
                         <div class="sky-form">
                             <div class="sky_form1">
                                 <ul>
@@ -124,11 +126,10 @@
                                        id="vehicle_price" required>
                             </label>
                         </div>
-                        <div>
+                       <div>
                             <label>
                                 <label for="vehicle_picture1">Choose a picture 1</label>
-                                <input placeholder="Enter details of car here" type="file" tabindex="7"
-                                       name="vehicle_picture1" id="vehicle_picture1"
+                                <input type="file" tabindex="7" name="vehicle_picture1" id="vehicle_picture1"
                                        accept="image/x-png,image/gif,image/jpeg">
                             </label>
                         </div>
@@ -158,9 +159,13 @@
                                 <textarea placeholder="enter car details here" tabindex="11" name="vehicle_details" id="vehicle_details" cols="40" rows="5"></textarea>
                             </label>
                         </div>
+                        </fieldset>
+                        <fieldset id="actions">
+                        <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
                         <div>
                             <input type="submit" value="create an offer" id="vehicle_submit">
                         </div>
+                        </fieldset>
                     </form>
                     <!-- /Form -->
                 </div>

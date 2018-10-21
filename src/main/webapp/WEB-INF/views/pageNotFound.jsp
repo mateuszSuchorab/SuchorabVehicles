@@ -17,7 +17,7 @@
                 <h2>Page not found. Error 404.
                     <br>
                     <br>
-                    <span><a href="${pageContext.request.contextPath}/index.htm">Click here to open home page!</a></span>
+                    <span><a href="${pageContext.request.contextPath}/index">Click here to open home page!</a></span>
                 </h2>
                 <br>
             </div>

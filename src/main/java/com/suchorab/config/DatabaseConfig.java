@@ -2,6 +2,7 @@ package com.suchorab.config;
 
 import com.suchorab.model.AppUser;
 import com.suchorab.model.UserRole;
+import com.suchorab.model.Vehicle;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -55,7 +56,8 @@ public class DatabaseConfig {
         localSessionFactoryBean.setDataSource((DataSource) appContext.getBean("DataSource"));
         localSessionFactoryBean.setAnnotatedClasses(
                 AppUser.class,
-                UserRole.class
+                UserRole.class,
+                Vehicle.class
         );
 
         Properties properties = new Properties();

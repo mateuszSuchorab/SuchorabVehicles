@@ -31,15 +31,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
 
-                .authorizeRequests().antMatchers("/").permitAll()
+                .authorizeRequests()
+                .antMatchers("/sellVehicle").authenticated()
+                .antMatchers("/**").permitAll()
                 .and()
-                .authorizeRequests().antMatchers("/register").permitAll()
+                .formLogin().loginPage("/login")
+                .usernameParameter("login_email")
+                .passwordParameter("login_password")
+                .defaultSuccessUrl("/").permitAll()
                 .and()
-                .authorizeRequests().anyRequest().authenticated()
-                .and()
-                .formLogin().loginPage("/register").permitAll()
-                .and()
-                .logout().permitAll();
+                .logout().permitAll()
+                .and().csrf().disable();
     }
     @Override
     public void configure(WebSecurity web) throws Exception {

@@ -12,25 +12,33 @@ import java.util.List;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 @AllArgsConstructor(access = AccessLevel.PUBLIC)
-public @Data class AppUser {
+@Table(name = "users")
+public @Data
+class AppUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(nullable = false, unique = true)
-    private String userName;
-    @Column(nullable = false)
+    @Column(name = "Email", nullable = false, unique = true)
+    private String email;
+    @Column(name = "Password", nullable = false)
     private String password;
+
+    @Column(name = "Roles")
     @ManyToMany(fetch = FetchType.EAGER)
     private List<UserRole> roles;
 
+    @Column(name = "FirstName")
+    private String firstName;
 
+    @Column(name = "LastName")
+    private String lastName;
 
-    public AppUser(String userName, String password, List<UserRole> roles) {
-        this.userName = userName;
-        this.password = password;
-        this.roles = roles;
-    }
+    @Column(name = "Gender")
+    private String gender;
+
+    @Column(name = "Telephone")
+    private String telephone;
 
     public int getId() {
         return id;
@@ -40,14 +48,17 @@ public @Data class AppUser {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+
+    @Column(name = "Email")
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
+    @Column(name = "Password")
     public String getPassword() {
         return password;
     }
@@ -56,6 +67,7 @@ public @Data class AppUser {
         this.password = password;
     }
 
+    @Column(name = "Roles")
     public List<UserRole> getRoles() {
         return roles;
     }
@@ -63,4 +75,42 @@ public @Data class AppUser {
     public void setRoles(List<UserRole> roles) {
         this.roles = roles;
     }
+
+    @Column(name = "FirstName")
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    @Column(name = "LastName")
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    @Column(name = "Gender")
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    @Column(name = "Telephone")
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+
 }
