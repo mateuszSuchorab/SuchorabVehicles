@@ -12,11 +12,11 @@ public interface VehicleService {
 
     public void updateVehicle(Vehicle vehicle);
 
-    public Vehicle editVehicle(Long vehicleId);
+    public Vehicle editVehicle(int vehicleId);
 
-    public void deleteVehicle(Long vehicleId);
+    public void deleteVehicle(int vehicleId);
 
-    public Vehicle findVehicle(Long vehicleId);
+    public Vehicle findVehicle(int vehicleId);
 
     public List<Vehicle> getAllVehicles();
 

@@ -19,10 +19,7 @@ import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 /**
  * @author Mateusz Suchorab <suchorchorab.mateusz@gmail.com>
@@ -78,7 +75,7 @@ public class OfferController {
         vehicle.setVehicleType(type);
         vehicle.setFuelType(fuelType);
         vehicle.setCreateDate(new Date());
-        List <AppUser> appUserList = new ArrayList<AppUser>();
+        Set<AppUser> appUserList = new HashSet<AppUser>();
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String logedUserEmail = auth.getName();
         if (!logedUserEmail.equals("anonymousUser") ){

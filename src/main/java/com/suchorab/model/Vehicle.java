@@ -9,6 +9,7 @@ import javax.persistence.*;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author Mateusz Suchorab <suchorab.mateusz@gmail.com>
@@ -71,7 +72,7 @@ public @Data class Vehicle  {
 
     @Column(name = "User")
     @ManyToMany(fetch = FetchType.EAGER)
-    private List<AppUser> appUser;
+    private Set<AppUser> appUser;
 
     public int getVehicleId() {
         return vehicleId;
@@ -161,11 +162,11 @@ public @Data class Vehicle  {
         this.createDate = createDate;
     }
 
-    public List<AppUser> getUser() {
+    public Set<AppUser> getUser() {
         return appUser;
     }
 
-    public void setUser(List<AppUser> appUser) {
+    public void setUser(Set<AppUser> appUser) {
         this.appUser = appUser;
     }
 

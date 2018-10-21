@@ -4,7 +4,7 @@
     Author     : Mateusz Suchorab <suchorab.mateusz@gmail.com>
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -24,8 +24,8 @@
                 <!-- start header_right -->
                 <div class="header_right">
                     <div class="rgt-bottom">
-                        <c:choose>
-                            <c:when test="${empty loggedInUser.getEmail()}">
+
+                            <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
                                 <div class="log">
                                     <div class="login">
                                         <div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
@@ -55,22 +55,22 @@
                                 <div class="reg">
                                     <a href="${pageContext.request.contextPath}/register">REGISTER</a>
                                 </div>
-                            </c:when>
-                            <c:otherwise>
+                            </sec:authorize>
+                            <sec:authorize access="!hasRole('ROLE_ANONYMOUS')">
                                 <div class="log">
                                     <div class="logout">
-                                        <div id="logoutContainer"><a href="${pageContext.request.contextPath}/logout"
+                                        <div id="logoutContainer"><a href="<c:url value='/logout' />"
                                                                      id="logoutButton"><span>Logout</span></a>
 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="regAccount">
-                                    <a href="${pageContext.request.contextPath}/userAccount">Logged
+                                    <a >Logged
                                         as: ${loggedInUser.getFirstName()} ${loggedInUser.getLastName()}</a>
                                 </div>
-                            </c:otherwise>
-                        </c:choose>
+                            </sec:authorize>
+
 
                         <div class="clearfix"></div>
                     </div>

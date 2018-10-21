@@ -30,17 +30,17 @@ public class VehicleServiceImpl implements VehicleService {
     }
 
     @Override
-    public Vehicle editVehicle(Long vehicleId) {
+    public Vehicle editVehicle(int vehicleId) {
         return vehicleDAO.editVehicle(vehicleId);
     }
 
     @Override
-    public void deleteVehicle(Long vehicleId) {
+    public void deleteVehicle(int vehicleId) {
         vehicleDAO.deleteVehicle(vehicleId);
     }
 
     @Override
-    public Vehicle findVehicle(Long vehicleId) {
+    public Vehicle findVehicle(int vehicleId) {
         return vehicleDAO.findVehicle(vehicleId);
     }
 

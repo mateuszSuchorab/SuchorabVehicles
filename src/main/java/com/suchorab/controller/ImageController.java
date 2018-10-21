@@ -21,7 +21,7 @@ public class ImageController {
     private VehicleService vehicleService;
 
     @RequestMapping(value = "/imageDisplay", method = RequestMethod.GET)
-    public void showImage(@RequestParam("vehicleId") Long vehicleId, @RequestParam("image") int imageNumber, HttpServletResponse response, HttpServletRequest request)
+    public void showImage(@RequestParam("vehicleId") int vehicleId, @RequestParam("image") int imageNumber, HttpServletResponse response, HttpServletRequest request)
             throws IOException {
         Vehicle vehicle = vehicleService.findVehicle(vehicleId);
         response.setContentType("image/jpeg, image/jpg, image/png, image/gif");

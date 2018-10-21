@@ -45,7 +45,7 @@ public class VehicleDAOImpl implements VehicleDAO {
     }
 
     @Override
-    public Vehicle editVehicle(Long vehicleId) {
+    public Vehicle editVehicle(int vehicleId) {
         Transaction transaction = currentSession().beginTransaction();
         Vehicle result =  findVehicle(vehicleId);
         if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))
@@ -54,14 +54,14 @@ public class VehicleDAOImpl implements VehicleDAO {
     }
 
     @Override
-    public void deleteVehicle(Long vehicleId) {
+    public void deleteVehicle(int vehicleId) {
         Transaction transaction = currentSession().beginTransaction();
         currentSession().delete(vehicleId);
         transaction.commit();
     }
 
     @Override
-    public Vehicle findVehicle(Long vehicleId) {
+    public Vehicle findVehicle(int vehicleId) {
         Transaction transaction = currentSession().beginTransaction();
         Vehicle result = (Vehicle) currentSession().get(Vehicle.class, vehicleId);
         if (!transaction.getStatus().equals(TransactionStatus.ACTIVE))

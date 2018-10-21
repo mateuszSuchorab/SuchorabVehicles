@@ -23,7 +23,7 @@ public class VehicleController {
     @RequestMapping(value = "/vehicle{vehicleId}")
     public ModelAndView showVehicle(@PathVariable("vehicleId") String vehicleId) {
         ModelAndView view = new ModelAndView();
-        Vehicle vehicle = vehicleService.findVehicle(Long.parseLong(vehicleId));
+        Vehicle vehicle = vehicleService.findVehicle(Integer.valueOf(vehicleId));
 
         if (vehicle != null) {
             view.setViewName("vehicle");
@@ -40,8 +40,8 @@ public class VehicleController {
             }
 
             view.addObject("vehicle", vehicle);
-            view.addObject("firstAdditionalVehicle", vehicleService.findVehicle(Long.valueOf(firstAdditionalVehicle)));
-            view.addObject("secondAdditionalVehicle", vehicleService.findVehicle(Long.valueOf(secondAdditionalVehicle)));
+            view.addObject("firstAdditionalVehicle", vehicleService.findVehicle(Integer.valueOf(firstAdditionalVehicle)));
+            view.addObject("secondAdditionalVehicle", vehicleService.findVehicle(Integer.valueOf(secondAdditionalVehicle)));
         } else {
             view.setViewName("pageNotFound");
         }
