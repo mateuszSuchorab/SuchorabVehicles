@@ -28,10 +28,10 @@
                                     <c:choose>
                                         <c:when test="${vehicle.image1==NULL}">
                                             <img class="etalage_thumb_image"
-                                                 src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                                 src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                                  class="img-responsive"/>
                                             <img class="etalage_source_image"
-                                                 src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                                 src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                                  class="img-responsive" title=""/>
                                         </c:when>
                                         <c:otherwise>
@@ -49,10 +49,10 @@
                                 <c:choose>
                                     <c:when test="${vehicle.image2==NULL}">
                                         <img class="etalage_thumb_image"
-                                             src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                             src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                              class="img-responsive"/>
                                         <img class="etalage_source_image"
-                                             src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                             src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                              class="img-responsive" title=""/>
                                     </c:when>
                                     <c:otherwise>
@@ -69,10 +69,10 @@
                                 <c:choose>
                                     <c:when test="${vehicle.image3==NULL}">
                                         <img class="etalage_thumb_image"
-                                             src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                             src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                              class="img-responsive"/>
                                         <img class="etalage_source_image"
-                                             src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                             src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                              class="img-responsive" title=""/>
                                     </c:when>
                                     <c:otherwise>
@@ -89,10 +89,10 @@
                                 <c:choose>
                                     <c:when test="${vehicle.image4==NULL}">
                                         <img class="etalage_thumb_image"
-                                             src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                             src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                              class="img-responsive"/>
                                         <img class="etalage_source_image"
-                                             src="<c:url value="/resources/images/imageNotFoundBig.png"/>"
+                                             src="<c:url value="/resources/static/images/imageNotFoundBig.png"/>"
                                              class="img-responsive" title=""/>
                                     </c:when>
                                     <c:otherwise>
@@ -147,7 +147,7 @@
                                 <a href="${pageContext.request.contextPath}/vehicle<c:out value="${firstAdditionalVehicle.vehicleId}"/>">
                                 <c:choose>
                                     <c:when test="${firstAdditionalVehicle.image1==NULL}">
-                                        <img src="<c:url value="/resources/images/imageNotFound.png"/>"
+                                        <img src="<c:url value="/resources/static/images/imageNotFound.png"/>"
                                              class="img-responsive "
                                              alt=""
                                              />
@@ -189,7 +189,7 @@
                                 <a href="${pageContext.request.contextPath}/vehicle<c:out value="${secondAdditionalVehicle.vehicleId}"/>">
                                 <c:choose>
                                     <c:when test="${secondAdditionalVehicle.image1==NULL}">
-                                        <img src="<c:url value="/resources/images/imageNotFound.png"/>"
+                                        <img src="<c:url value="/resources/static/images/imageNotFound.png"/>"
                                              class="img-responsive "
                                              alt=""/>
                                     </c:when>

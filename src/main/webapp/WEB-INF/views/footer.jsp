@@ -21,7 +21,7 @@
                         <ul>
                             <li><a href="https://www.facebook.com/mateusz.suchorab"><i class="facebok"> </i></a></li>
                             <li><a href="https://plus.google.com/100238697624311083114"><i class="goog"> </i></a></li>
-                            <li><a href="https://github.com/mateuszSuchorab"><img src="<c:url value="/resources/images/GitHub-Mark-32px.png"/>" alt=""></a></li>
+                            <li><a href="https://github.com/mateuszSuchorab"><img src="<c:url value="/resources/static/images/GitHub-Mark-32px.png"/>" alt=""></a></li>
                             <div class="clearfix"></div>	
                         </ul>
                     </div>

@@ -14,13 +14,13 @@
             Suchorab vehicles
         </title>
         <!--favicon -->
-        <link href="<c:url value="/resources/images/favicon.ico"/>" type="image/x-icon" rel="shortcut icon" />
+        <link href="<c:url value="/resources/static/images/favicon.ico"/>" type="image/x-icon" rel="shortcut icon" />
 
-        <link href="<c:url value="/resources/css/bootstrap.css"/>" rel='stylesheet' type='text/css' />
+        <link href="<c:url value="/resources/static/css/bootstrap.css"/>" rel='stylesheet' type='text/css' />
         <!-- jQuery (necessary JavaScript plugins) -->
-        <script type='text/javascript' src="<c:url value="/resources/js/jquery-1.11.1.min.js"/>"></script>
+        <script type='text/javascript' src="<c:url value="/resources/static/js/jquery-1.11.1.min.js"/>"></script>
         <!-- Custom Theme files -->
-        <link href="<c:url value="/resources/css/style.css"/>" rel='stylesheet' type='text/css' />
+        <link href="<c:url value="/resources/static/css/style.css"/>" rel='stylesheet' type='text/css' />
         <!-- Custom Theme files -->
         <!--//theme-style-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,14 +31,14 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
         <!-- start menu -->
-        <link href="<c:url value="/resources/css/megamenu.css"/>" rel="stylesheet" type="text/css" media="all" />
-        <script type="text/javascript" src="<c:url value="/resources/js/megamenu.js"/>"></script>
+        <link href="<c:url value="/resources/static/css/megamenu.css"/>" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="<c:url value="/resources/static/js/megamenu.js"/>"></script>
         <script>$(document).ready(function () {
                 $(".megamenu").megamenu();
             });</script>
-        <script src="<c:url value="/resources/js/menu_jquery.js"/>"></script>
-        <script src="<c:url value="/resources/js/jquery.etalage.min.js"/>"></script>
-        <link rel="stylesheet" href="<c:url value="/resources/css/etalage.css"/>"/>
+        <script src="<c:url value="/resources/static/js/menu_jquery.js"/>"></script>
+        <script src="<c:url value="/resources/static/js/jquery.etalage.min.js"/>"></script>
+        <link rel="stylesheet" href="<c:url value="/resources/static/css/etalage.css"/>"/>
 
 
     </head>
