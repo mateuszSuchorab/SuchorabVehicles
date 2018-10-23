@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="arriv-top">
                     <div class="col-md-6 arriv-left">
-                        <img src="<c:url value="/resources/images/1.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/1.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info">
                             <h3>NEW ARRIVALS</h3>
                             <p>CHECK NEW CARS</p>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 arriv-right">
-                        <img src="<c:url value="/resources/images/2.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/2.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info">
                             <h3>SELL YOUR VEHICLE</h3>
                             <p>YOU CAN SELL YOUR VEHICLE HERE</p>
@@ -40,13 +40,13 @@
                 </div>
                 <div class="arriv-bottm">
                     <div class="col-md-8 arriv-left1">
-                        <img src="<c:url value="/resources/images/3.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/3.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
                             <a href="${pageContext.request.contextPath}/Cars"><h3>Cars<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="col-md-4 arriv-right1">
-                        <img src="<c:url value="/resources/images/4.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/4.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
                             <a href="${pageContext.request.contextPath}/Motorbikes"><h3>Motorbikes<i class="ars"></i></h3></a>
                         </div>
@@ -55,19 +55,19 @@
                 </div>
                 <div class="arriv-las">
                     <div class="col-md-4 arriv-left2">
-                        <img src="<c:url value="/resources/images/5.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/5.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
                             <a href="${pageContext.request.contextPath}/Trucks"><h3>TRUCKS<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="col-md-4 arriv-middle">
-                        <img src="<c:url value="/resources/images/6.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/6.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
                             <a href="${pageContext.request.contextPath}/Vans"><h3>VANS<i class="ars"></i></h3></a>
                         </div>
                     </div>
                     <div class="col-md-4 arriv-right2">
-                        <img src="<c:url value="/resources/images/7.jpg"/>" class="img-responsive" alt="">
+                        <img src="<c:url value="/resources/static/images/7.jpg"/>" class="img-responsive" alt="">
                         <div class="arriv-info2">
                             <a href="${pageContext.request.contextPath}/Buses"><h3>BUSES<i class="ars"></i></h3></a>
                         </div>

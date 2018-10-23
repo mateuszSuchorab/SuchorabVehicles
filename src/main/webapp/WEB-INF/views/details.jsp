@@ -257,7 +257,7 @@
                             href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
                         <c:choose>
                             <c:when test="${vehicleListElement.image1==NULL || vehicleListElement.image1==''}">
-                                <img src="<c:url value="/resources/images/imageNotFound.png"/>" class="img-responsive" alt=""/>
+                                <img src="<c:url value="/resources/static/images/imageNotFound.png"/>" class="img-responsive" alt=""/>
                             </c:when>
                             <c:otherwise>
                                 <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicleListElement.vehicleId}&image=1"/>" class="img-responsive" alt=""/>

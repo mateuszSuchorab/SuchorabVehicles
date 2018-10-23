@@ -18,7 +18,7 @@
             <div class="head-t">
                 <div class="logo">
                     <a href="${pageContext.request.contextPath}/"><img
-                            src="<c:url value="/resources/images/suchorab-vehicles-logo.png"/>"
+                            src="<c:url value="/resources/static/images/suchorab-vehicles-logo.png"/>"
                             class="img-responsive" alt=""/> </a>
                 </div>
                 <!-- start header_right -->
