@@ -39,8 +39,4 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         CommonsMultipartResolver resolver = new CommonsMultipartResolver();
         return resolver;
     }
-    @Override
-    public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        configurer.favorPathExtension(false);
-    }
 }
