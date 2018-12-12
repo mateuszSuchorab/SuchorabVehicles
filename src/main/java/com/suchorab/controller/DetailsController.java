@@ -21,6 +21,62 @@ public class DetailsController {
     @Autowired
     private VehicleService vehicleService;
 
+    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+    public ModelAndView adminVehicles(@RequestParam(value = "sort", required = false) String sort,
+                                      @RequestParam(value = "makeList", required = false) List<String> uncheckedMakeList,
+                                      @RequestParam(value = "modelList", required = false) List<String> uncheckedModelList,
+                                      @RequestParam(value = "min_price", required = false) String minPrice,
+                                      @RequestParam(value = "max_price", required = false) String maxPrice,
+                                      @RequestParam(value = "min_power", required = false) String minPower,
+                                      @RequestParam(value = "max_power", required = false) String maxPower,
+                                      @RequestParam(value = "min_kilometerage", required = false) String minKilometerage,
+                                      @RequestParam(value = "max_kilometerage", required = false) String maxKilometerage,
+                                      @RequestParam(value = "fuel_type", required = false) List<String> fuelTypeList,
+                                      @RequestParam(value = "min_registrationTime", required = false) String minRegistrationTime,
+                                      @RequestParam(value = "max_registrationTime", required = false) String maxRegistrationTime) {
+
+        ModelAndView view = new ModelAndView();
+
+        ArrayList<String> vehicleMakeList = new ArrayList<String>();
+        ArrayList<String> vehicleModelList = new ArrayList<String>();
+
+        List<Vehicle> vehicleList = vehicleService.getAdminVehicles();
+
+        view.setViewName("details");
+
+        // This make values in vehicleMakeList unique and delete vehicle from vehicleList when Make is in url param
+        uniqueAndDeleteMake(vehicleList, vehicleMakeList, uncheckedMakeList);
+
+        // This make values in vehicleModelList unique and delete vehicle from vehickeList when Model is in url param
+        uniqueAndDeleteModel(vehicleList, vehicleModelList, uncheckedModelList);
+
+        //filter by
+        filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
+        //sorting
+        if (sort != null) {
+            sortVehicleList(vehicleList, sort);
+        }
+        //block of addObject to view
+        view.addObject("vehicleList", vehicleList);
+        view.addObject("vehicleMakeList", vehicleMakeList);
+        view.addObject("vehicleModelList", vehicleModelList);
+        view.addObject("vehicleType", "Admin");
+        view.addObject("uncheckedMakeList", uncheckedMakeList);
+        view.addObject("uncheckedModelList", uncheckedModelList);
+        view.addObject("minPrice", minPrice);
+        view.addObject("maxPrice", maxPrice);
+        view.addObject("minPower", minPower);
+        view.addObject("maxPower", maxPower);
+        view.addObject("minKilometerage", minKilometerage);
+        view.addObject("maxKilometerage", maxKilometerage);
+        view.addObject("fuelTypeList", fuelTypeList);
+        view.addObject("minRegistrationTime", minRegistrationTime);
+        view.addObject("maxRegistrationTime", maxRegistrationTime);
+
+
+        return view;
+    }
+
     @RequestMapping(value = "/{vehicleType}", method = RequestMethod.GET)
     public ModelAndView showVehicles(@PathVariable("vehicleType") String vehicleType,
                                      @RequestParam(value = "sort", required = false) String sort,

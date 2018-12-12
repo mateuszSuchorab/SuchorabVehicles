@@ -69,7 +69,7 @@ public class OfferController {
         vehicle.setMake(make.substring(0, 1).toUpperCase() + make.substring(1));
         vehicle.setModel(model.substring(0, 1).toUpperCase() + model.substring(1));
         vehicle.setKilometer(kilometer);
-        vehicle.setAccepted(true);
+        vehicle.setAccepted(false);
         vehicle.setPower(power);
         vehicle.setPrice(price);
         vehicle.setVehicleType(type);

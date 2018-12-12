@@ -33,12 +33,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
                 .authorizeRequests()
                 .antMatchers("/sellVehicle").authenticated()
+                .antMatchers("/register").not().authenticated()
+                .antMatchers("/admin","/admin/*").hasRole("ADMIN")
                 .antMatchers("/**").permitAll()
                 .and()
                 .formLogin().loginPage("/login")
                 .usernameParameter("login_email")
                 .passwordParameter("login_password")
                 .defaultSuccessUrl("/").permitAll()
+                .and()
+                .exceptionHandling().accessDeniedPage("/accessDenied")
                 .and()
                 .logout().permitAll()
                 .and().csrf().disable();

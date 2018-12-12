@@ -4,6 +4,7 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
@@ -40,6 +41,7 @@ public @Data class Vehicle  {
     private int price;
 
     @Column(name = "Accepted")
+    @Type(type = "org.hibernate.type.NumericBooleanType")
     private boolean accepted;
 
     @Column(name = "FuelType")

@@ -252,28 +252,58 @@
                 <c:if test="${grindNumber%4 == 1}">
                     <div class="grids_of_4 ">
                 </c:if>
-                <div class="grid1_of_4" id="grind_<c:out value="${grindNumber}"/>">
-                    <div class="content_box"><a
-                            href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
-                        <c:choose>
-                            <c:when test="${vehicleListElement.image1==NULL || vehicleListElement.image1==''}">
-                                <img src="<c:url value="/resources/static/images/imageNotFound.png"/>" class="img-responsive" alt=""/>
-                            </c:when>
-                            <c:otherwise>
-                                <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicleListElement.vehicleId}&image=1"/>" class="img-responsive" alt=""/>
-                            </c:otherwise>
-                        </c:choose>
+                <c:choose>
+                <c:when test="${vehicleListElement.accepted}">
+                    <div class="grid1_of_4" id="grind_<c:out value="${grindNumber}"/>">
+                        <div class="content_box"><a
+                                href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
+                            <c:choose>
+                                <c:when test="${vehicleListElement.image1==NULL || vehicleListElement.image1==''}">
+                                    <img src="<c:url value="/resources/static/images/imageNotFound.png"/>" class="img-responsive" alt=""/>
+                                </c:when>
+                                <c:otherwise>
+                                    <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicleListElement.vehicleId}&image=1"/>" class="img-responsive" alt=""/>
+                                </c:otherwise>
+                            </c:choose>
 
-                    </a>
-                        <h4><a href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
-                            <c:out value="${vehicleListElement.make}"/></a></h4>
-                        <p><c:out value="${vehicleListElement.model}"/></p>
-                        <div class="grid_1 simpleCart_shelfItem">
-                            <div class="item_add"><span class="item_price"><h6><c:out
-                                    value="${vehicleListElement.price}"/></h6></span></div>
+                        </a>
+                            <h4><a href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
+                                <c:out value="${vehicleListElement.make}"/></a></h4>
+                            <p><c:out value="${vehicleListElement.model}"/></p>
+                            <div class="grid_1 simpleCart_shelfItem">
+                                <div class="item_add"><span class="item_price"><h6><c:out
+                                        value="${vehicleListElement.price}"/></h6></span></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </c:when>
+                <c:otherwise>
+                    <div class="grid1_of_4" id="grind_<c:out value="${grindNumber}"/>">
+                        <div class="content_box"><a
+                                href=admin/vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
+                            <c:choose>
+                                <c:when test="${vehicleListElement.image1==NULL || vehicleListElement.image1==''}">
+                                    <img src="<c:url value="/resources/static/images/imageNotFound.png"/>" class="img-responsive" alt=""/>
+                                </c:when>
+                                <c:otherwise>
+                                    <img src="<c:url value="/vehicleImage/imageDisplay?vehicleId=${vehicleListElement.vehicleId}&image=1"/>" class="img-responsive" alt=""/>
+                                </c:otherwise>
+                            </c:choose>
+
+                        </a>
+                            <h4><a href=admin/vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
+                                <c:out value="${vehicleListElement.make}"/></a></h4>
+                            <p><c:out value="${vehicleListElement.model}"/></p>
+                            <div class="grid_1 simpleCart_shelfItem">
+                                <div class="item_add"><span class="item_price"><h6><c:out
+                                        value="${vehicleListElement.price}"/></h6></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </c:otherwise>
+            </c:choose>
+
+
                 <c:if test="${grindNumber%4 == 0}">
                     <div class="clearfix"></div>
                     </div >

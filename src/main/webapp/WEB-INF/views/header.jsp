@@ -69,6 +69,11 @@
                                     <a >Logged
                                         as: <sec:authentication property="principal.username" /></a>
                                 </div>
+                                <sec:authorize access="hasRole('ROLE_ADMIN')">
+                                    <div class="regAccount">
+                                        <a href="${pageContext.request.contextPath}/admin"> Go to Admin panel</a>
+                                    </div>
+                                </sec:authorize>
                             </sec:authorize>
 
 
