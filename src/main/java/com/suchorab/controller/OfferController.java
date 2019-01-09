@@ -1,7 +1,9 @@
 package com.suchorab.controller;
 
+import com.suchorab.model.AcceptableVehicle;
 import com.suchorab.model.AppUser;
 import com.suchorab.model.Vehicle;
+import com.suchorab.service.AcceptableVehicleService;
 import com.suchorab.service.AppUserService;
 import com.suchorab.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +37,14 @@ public class OfferController {
     @Autowired
     private AppUserService appUserService;
 
+    @Autowired
+    private AcceptableVehicleService acceptableVehicleService;
+
     @RequestMapping(value = "/sellVehicle")
     public ModelAndView showSellVehicles(HttpSession session) {
         ModelAndView view = new ModelAndView();
+        List <AcceptableVehicle> acceptableVehiclesList = acceptableVehicleService.getAllAcceptableVehicle();
+        view.addObject("acceptableVehiclesList",acceptableVehiclesList);
         view.setViewName("sellVehicle");
         return view;
     }
