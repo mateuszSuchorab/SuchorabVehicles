@@ -174,7 +174,7 @@
                             <c:set var="containsHybryd" value="true" />
                             <c:set var="containsLPG"    value="true" />
                             <c:forEach var="fuelType" items="${fuelTypeList}">
-                                <c:if test="${fuelType eq 'LPG'}">dsadsa <c:set var="containsLPG" value="false" /> </c:if>
+                                <c:if test="${fuelType eq 'LPG'}"> <c:set var="containsLPG" value="false" /> </c:if>
                                 <c:if test="${fuelType eq 'Petrol'}"> <c:set var="containsPetrol" value="false" /> </c:if>
                                 <c:if test="${fuelType eq 'Diesel'}"> <c:set var="containsDiesel" value="false" /> </c:if>
                                 <c:if test="${fuelType eq 'Hybryd'}"> <c:set var="containsHybryd" value="false" /> </c:if>
