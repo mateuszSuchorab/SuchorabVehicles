@@ -256,7 +256,7 @@
                 <c:when test="${vehicleListElement.accepted}">
                     <div class="grid1_of_4" id="grind_<c:out value="${grindNumber}"/>">
                         <div class="content_box"><a
-                                href=vehicle<c:out value="${vehicleListElement.vehicleId}"/>>
+                                href="${pageContext.request.contextPath}/vehicle<c:out value="${vehicleListElement.vehicleId}"/>">
                             <c:choose>
                                 <c:when test="${vehicleListElement.image1==NULL || vehicleListElement.image1==''}">
                                     <img src="<c:url value="/resources/static/images/imageNotFound.png"/>" class="img-responsive" alt=""/>

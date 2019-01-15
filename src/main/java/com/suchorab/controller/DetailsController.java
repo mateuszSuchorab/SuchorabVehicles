@@ -44,14 +44,15 @@ public class DetailsController {
 
         view.setViewName("details");
 
+        //filter by
+        filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
+
         // This make values in vehicleMakeList unique and delete vehicle from vehicleList when Make is in url param
         uniqueAndDeleteMake(vehicleList, vehicleMakeList, uncheckedMakeList);
 
         // This make values in vehicleModelList unique and delete vehicle from vehickeList when Model is in url param
         uniqueAndDeleteModel(vehicleList, vehicleModelList, uncheckedModelList);
-
-        //filter by
-        filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
+        
         //sorting
         if (sort != null) {
             sortVehicleList(vehicleList, sort);
@@ -112,14 +113,15 @@ public class DetailsController {
                 vehicleList = vehicleService.getAllVehiclesType(vehicleType);
             }
 
+            //filter by
+            filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
+
             // This make values in vehicleMakeList unique and delete vehicle from vehicleList when Make is in url param
             uniqueAndDeleteMake(vehicleList, vehicleMakeList, uncheckedMakeList);
 
             // This make values in vehicleModelList unique and delete vehicle from vehickeList when Model is in url param
             uniqueAndDeleteModel(vehicleList, vehicleModelList, uncheckedModelList);
 
-            //filter by
-            filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
             //sorting
             if (sort != null) {
                 sortVehicleList(vehicleList, sort);
@@ -183,11 +185,12 @@ public class DetailsController {
 
             vehicleList = vehicleService.getAllVehiclesMake(vehicleType, vehicleMake);
 
+            //filter by
+            filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
+
             // This make values in vehicleModelList unique and delete vehicle from vehickeList when Model is in url param
             uniqueAndDeleteModel(vehicleList, vehicleModelList, uncheckedModelList);
 
-            //filter by
-            filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
             //sorting
             if (sort != null) {
                 sortVehicleList(vehicleList, sort);
@@ -251,11 +254,12 @@ public class DetailsController {
 
             vehicleList = vehicleService.getAllVehiclesModel(vehicleType, vehicleMake, vehicleModel);
 
+            //filter by
+            filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
+
             // This make values in vehicleModelList unique and delete vehicle from vehickeList when Model is in url param
             uniqueAndDeleteModel(vehicleList, vehicleModelList, uncheckedModelList);
 
-            //filter by
-            filterVehicleList(vehicleList, minPrice, maxPrice, minPower, maxPower, minKilometerage, maxKilometerage, fuelTypeList, minRegistrationTime, maxRegistrationTime);
             //sorting
             if (sort != null) {
                 sortVehicleList(vehicleList, sort);
