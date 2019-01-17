@@ -69,6 +69,11 @@
                                     <a >Logged
                                         as: <sec:authentication property="principal.username" /></a>
                                 </div>
+                                <sec:authorize access="hasRole('ROLE_ADMIN')">
+                                    <div class="regAccount">
+                                        <a href="${pageContext.request.contextPath}/admin"> Go to Admin panel</a>
+                                    </div>
+                                </sec:authorize>
                             </sec:authorize>
 
 
@@ -469,11 +474,11 @@
                             </div>
                             <div class="col1">
                                 <div class="h_nav">
-                                    <a href="${pageContext.request.contextPath}/Buses/Iveco"><h4>Iveco</h4></a>
+                                    <a href="${pageContext.request.contextPath}/Buses/IVECO"><h4>Iveco</h4></a>
                                     <ul>
-                                        <li><a href="${pageContext.request.contextPath}/Buses/Iveco/First">First</a></li>
-                                        <li><a href="${pageContext.request.contextPath}/Buses/Iveco/Daily">Daily</a></li>
-                                        <li><a href="${pageContext.request.contextPath}/Buses/Iveco/Cuby">Cuby</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/Buses/IVECO/First">First</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/Buses/IVECO/Daily">Daily</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/Buses/IVECO/Cuby">Cuby</a></li>
                                     </ul>
                                 </div>
                             </div>

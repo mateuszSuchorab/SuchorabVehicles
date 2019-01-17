@@ -29,15 +29,6 @@ public class VehicleServiceImpl implements VehicleService {
         vehicleDAO.updateVehicle(vehicle);
     }
 
-    @Override
-    public Vehicle editVehicle(int vehicleId) {
-        return vehicleDAO.editVehicle(vehicleId);
-    }
-
-    @Override
-    public void deleteVehicle(int vehicleId) {
-        vehicleDAO.deleteVehicle(vehicleId);
-    }
 
     @Override
     public Vehicle findVehicle(int vehicleId) {
@@ -47,6 +38,11 @@ public class VehicleServiceImpl implements VehicleService {
     @Override
     public List<Vehicle> getAllVehicles() {
         return vehicleDAO.getAllVehicles();
+    }
+
+    @Override
+    public List<Vehicle> getAdminVehicles() {
+        return vehicleDAO.getAdminVehicles();
     }
 
     @Override

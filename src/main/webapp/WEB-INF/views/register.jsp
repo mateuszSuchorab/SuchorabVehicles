@@ -22,7 +22,6 @@
                     <!-- Form -->
                     <form id="registration_form" action="${pageContext.request.contextPath}/register" method="POST">
                         <fieldset id="inputs">
-
                             <div>
                                 <label>
                                     <input placeholder="first name:" type="text" tabindex="1" name="register_firstName"

@@ -1,5 +1,6 @@
 package com.suchorab.config;
 
+import com.suchorab.model.AcceptableVehicle;
 import com.suchorab.model.AppUser;
 import com.suchorab.model.UserRole;
 import com.suchorab.model.Vehicle;
@@ -57,7 +58,8 @@ public class DatabaseConfig {
         localSessionFactoryBean.setAnnotatedClasses(
                 AppUser.class,
                 UserRole.class,
-                Vehicle.class
+                Vehicle.class,
+                AcceptableVehicle.class
         );
 
         Properties properties = new Properties();
