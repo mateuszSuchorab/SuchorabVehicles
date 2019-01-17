@@ -52,7 +52,7 @@ public class DetailsController {
 
         // This make values in vehicleModelList unique and delete vehicle from vehickeList when Model is in url param
         uniqueAndDeleteModel(vehicleList, vehicleModelList, uncheckedModelList);
-        
+
         //sorting
         if (sort != null) {
             sortVehicleList(vehicleList, sort);
