@@ -101,8 +101,10 @@
         preGetAcceptableVehicles();
         getAcceptableVehicles(radioVar);
         $('.radio input:radio').bind('click', function (event) {
+            if(this.name == "vehicle_type"){
             getAcceptableVehicles($(this).val());
             radioVar = $(this).val();
+            }
         });
         $('#selectOptionMake').bind('change', function (event) {
             getAcceptableVehiclesModel(radioVar, $('#selectOptionMake option:selected').val());
@@ -149,7 +151,7 @@
                             <div>
                                 <label>
                                     <label for="selectOptionMake">Choose vehicle make</label>
-                                    <select class="selectOptionMake" id="selectOptionMake">
+                                    <select class="selectOptionMake" id="selectOptionMake" name="vehicle_make">
                                         <c:forEach items="${acceptableVehiclesList}"
                                                    var="acceptableVehiclesListElement">
                                             <option value="<c:out value="${acceptableVehiclesListElement.make}"/>">${acceptableVehiclesListElement.make}</option>
@@ -162,7 +164,7 @@
                             <div>
                                 <label>
                                     <label for="selectOptionModel">Choose vehicle model</label>
-                                    <select class="selectOptionModel" id="selectOptionModel">
+                                    <select class="selectOptionModel" id="selectOptionModel" name="vehicle_model">
                                         <option value="Model">Model</option>
                                     </select>
 

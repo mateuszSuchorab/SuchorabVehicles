@@ -50,8 +50,8 @@ public class OfferController {
     }
 
     @RequestMapping(value = "/successOffer", method = RequestMethod.POST ,  consumes = "multipart/form-data")
-    public ModelAndView showSuccessOffer(@RequestParam("vehicle_make") String make,
-                                         @RequestParam("vehicle_model") String model,
+    public ModelAndView showSuccessOffer(@RequestParam("vehicle_make") String[] makee,
+                                         @RequestParam("vehicle_model") String[] modell,
                                          @RequestParam("vehicle_power") int power,
                                          @RequestParam("vehicle_type") String type,
                                          @RequestParam("vehicle_firstRegistration") String firstRegistration,
@@ -68,6 +68,9 @@ public class OfferController {
         Vehicle vehicle = new Vehicle();
         DateFormat dateFormat = new SimpleDateFormat("MMMM yyyy", Locale.US);
 
+        String make = makee[0];
+        String model = modell[0];
+        System.out.println(make + "              model: " + model);
         try {
             vehicle.setFirstRegistration(dateFormat.parse(firstRegistration));
         } catch (ParseException e) {
